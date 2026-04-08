@@ -3,5 +3,11 @@ components:
   name: button_anmelden
   properties: {text: Anmelden}
   type: Button
+- data_bindings:
+  - {code: 'f"{self.item[''teilnehmer'']}/{self.item[''maxteilnehmer'']}"', property: text, writeback: false}
+  layout_properties: {column: ZUAYXK}
+  name: label_teilnehmer
+  properties: {}
+  type: Label
 container: {type: DataRowPanel}
 is_package: true
