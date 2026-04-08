@@ -1,0 +1,7 @@
+components:
+- layout_properties: {column: DEKYKC}
+  name: button_anmelden
+  properties: {text: Anmelden}
+  type: Button
+container: {type: DataRowPanel}
+is_package: true

@@ -1,4 +1,4 @@
-from ._anvil_designer import StartseiteTemplate
+from ._anvil_designer import RowTemplate1Template
 from anvil import *
 import anvil.tables as tables
 import anvil.tables.query as q
@@ -6,14 +6,9 @@ from anvil.tables import app_tables
 import anvil.server
 
 
-class Startseite(StartseiteTemplate):
+class RowTemplate1(RowTemplate1Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
-
-  @handle("button_kursuebersicht", "click")
-  def button_kursuebersicht_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form("Startseite.Kursuebersicht", row_dict=self.item)

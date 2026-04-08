@@ -1,3 +1,23 @@
-components: []
+components:
+- components:
+  - name: repeating_panel_1
+    properties: {item_template: Startseite.Kursuebersicht.RowTemplate1}
+    type: RepeatingPanel
+  layout_properties: {grid_position: 'JSUZZS,YHKBSZ'}
+  name: data_grid_1
+  properties:
+    columns:
+    - {data_key: bezeichnung, id: JKSDUP, title: Kurs}
+    - {data_key: wochentag, id: VJQQOR, title: Wochentag}
+    - {data_key: uhrzeit, id: OJLQEN, title: Uhrzeit}
+    - {data_key: trainer, id: LWCYLF, title: Trainer}
+    - {data_key: column_2, id: ZUAYXK, title: Teilnehmer}
+    - {data_key: column_1, id: DEKYKC, title: Anmelden}
+  type: DataGrid
+- event_bindings: {}
+  layout_properties: {grid_position: 'AHPUAE,TCHNJH'}
+  name: button_startseite_kursuebersicht
+  properties: {text: <-- Zurück}
+  type: Button
 container: {type: ColumnPanel}
 is_package: true
