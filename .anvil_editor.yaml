@@ -4,9 +4,9 @@ unique_ids:
     theme.css: NSOAU7IQSI5PNDQIIUOSF4G3NQX5TXHC
   forms:
     Startseite: TXE7CVC3PIF2PEU6GC3O6FDHQDREGL45
-    Startseite.Anmelden: '1775639501176518371516699.41125'
-    Startseite.Anmelden.RowTemplate2: '1775640142547647575179777.0885'
     Startseite.Kursuebersicht: '1775637226932122450581701.33116'
+    Startseite.Kursuebersicht.Anmelden: '1775639501176518371516699.41125'
+    Startseite.Kursuebersicht.Anmelden.RowTemplate2: '1775640142547647575179777.0885'
     Startseite.Kursuebersicht.RowTemplate1: '1775637835238126906968135.4259'
   modules: {}
   scripts: {}

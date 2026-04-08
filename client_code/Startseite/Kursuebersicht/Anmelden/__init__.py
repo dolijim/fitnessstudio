@@ -18,3 +18,9 @@ class Anmelden(AnmeldenTemplate):
     """This method is called when the button is clicked"""
     open_form("Startseite.Kursuebersicht", row_dict=self.item)
 
+  @handle('data_grid_1', 'show')
+  def data_grid_1_show(self, **event_args):
+    """This method is called when the data grid is shown on the screen"""
+    return_value = anvil.server.call('get_Mitglied')
+    self.repeating_panel_anmelden.items = return_value
+

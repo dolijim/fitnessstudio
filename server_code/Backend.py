@@ -38,3 +38,14 @@ def get_Kurs():
       GROUP BY k.kursid
     """).fetchall()
     return [dict(row) for row in result]
+
+@anvil.server.callable
+def get_Mitglied():
+  with sqlite3.connect(data_files['Bitschnau_Chiara_fitnessstudio.db']) as conn:
+    conn.row_factory = sqlite3.Row
+    cur = conn.cursor()
+    result = cur.execute("""
+      SELECT 
+        m.vorname || ' ' || m.nachname AS mitglied FROM Mitglied m
+    """).fetchall()
+    return [dict(row) for row in result]

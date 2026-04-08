@@ -16,4 +16,4 @@ class RowTemplate1(RowTemplate1Template):
   @handle("button_anmelden", "click")
   def button_anmelden_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
+    open_form('Startseite.Kursuebersicht.Anmelden')
