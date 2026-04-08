@@ -1,5 +1,6 @@
 components:
-- layout_properties: {column: DEKYKC}
+- event_bindings: {}
+  layout_properties: {column: DEKYKC}
   name: button_anmelden
   properties: {text: Anmelden}
   type: Button

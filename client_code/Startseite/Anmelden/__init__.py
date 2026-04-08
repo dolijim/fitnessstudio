@@ -17,3 +17,4 @@ class Anmelden(AnmeldenTemplate):
   def button_kursuebersicht_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form("Startseite.Kursuebersicht", row_dict=self.item)
+
